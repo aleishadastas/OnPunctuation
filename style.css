@@ -1,0 +1,41 @@
+
+@font-face {
+    font-family: "Junicode";
+    src: url("fonts/Junicode-Regular.ttf");
+    src: url("Junicode-Bold.ttf") format("truetype");
+    src: url("fonts/Junicode-Italic.ttf");
+    src: url("fonts/Junicode-BoldItalic.ttf");
+    font-weight: normal;
+  }
+
+
+body {
+    background-color: white;
+    font-family: "Junicode";
+    background-color: transparent;
+  }
+
+
+/* homepage styles  */
+  .headers {
+    font-size: 10em;
+    color: black;
+    font-family: "Junicode-Bold";
+    margin-top: -90px;
+    line-height:20px;
+    margin-left:40px;
+    margin-right: 40px;
+}
+
+
+h1{
+  text-align: right;
+  right: 50px;
+  position: relative;
+}
+
+#author:hover {
+color: red;
+ }
+
+  
