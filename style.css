@@ -21,7 +21,7 @@ body {
     font-size: 10em;
     color: black;
     font-family: "Junicode-Bold";
-    margin-top: -110px;
+    margin-top: -100px;
     line-height:20px;
     margin-left:40px;
     margin-right: 40px;
@@ -32,16 +32,17 @@ h1{
   text-align: right;
   right: 50px;
   position: relative;
+  font-size: 1.6em;
 }
 
 h2{
-line-height: 10px;
-font-size: 2em;
+line-height: 8px;
+font-size: 1.6em;
 margin-top: 10px;
 }
 
 h3{
-  font-size: 2em;
+  font-size: 1.6em;
   line-height: 10px;
 }
 
