@@ -21,7 +21,7 @@ body {
     font-size: 10em;
     color: black;
     font-family: "Junicode-Bold";
-    margin-top: -90px;
+    margin-top: -110px;
     line-height:20px;
     margin-left:40px;
     margin-right: 40px;
@@ -32,6 +32,17 @@ h1{
   text-align: right;
   right: 50px;
   position: relative;
+}
+
+h2{
+line-height: 10px;
+font-size: 2em;
+margin-top: 10px;
+}
+
+h3{
+  font-size: 2em;
+  line-height: 10px;
 }
 
 #author:hover {
