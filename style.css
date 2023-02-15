@@ -1,4 +1,5 @@
 
+
 @font-face {
     font-family: "Junicode";
     src: url("fonts/Junicode-Regular.ttf");
@@ -15,61 +16,96 @@ body {
     background-color: white;
     font-family: "Junicode";
     background-color: transparent;
+    font-size: 16px;
+  }
+
+  #flex-container {
+    display: flex;
+    background-color: none;
+    flex-direction: row;
+     flex-wrap: wrap;
+    justify-content: center; 
+    width: 100%;
+    margin-left: 0;
   }
 
 
 /* homepage styles  */
   .headers {
-    font-size: 10em;
+    font-size: 10.5em;
     color: black;
     font-family: "Junicode-Bold";
-    margin-top: -105px;
-    line-height:20px;
+    margin-top: -130px;
+    line-height:10px;
     margin-left:40px;
     margin-right: 40px;
+    flex-grow: inherit;
+    display: block;
 }
 
 
 h1{
   text-align: right;
-  right: 50px;
+  right: 20px;
   position: relative;
-  font-size: 1.8em;
-  line-height: 6px;
+  font-size: 2em;
+  line-height: 2px;
 }
 
 h2{
-line-height: 8px;
-font-size: 1.8em;
-margin-top: 5px;
+line-height: 2px;
+font-size: 2em;
+margin-top: 10px
 }
 
 h3{
-  font-size: 1.8em;
-  line-height: 5px;
+  font-size: 2em;
+  line-height: 2px;
+  margin: 0 auto;
 }
 
 #author{
-  
+  font-size: 4em;
+  line-height: 65px;
+  position: absolute;
+  top: 5em;
+  right: 21%;
 }
 
 .punctuation{
-  font-size: 10em;
   line-height: 5px;
   font-family: "Junicode-Bold";
-  line-height: 2px;
+  font-size: 18em;
+  /* opacity: 0; */
+}
+
+
+p:nth-child(2){ /*dash*/
+  text-align: right;
+  right: 50%;
+  position: absolute;
+  top: 80px;
+}
+
+ p:nth-child(3){  /*period*/
+  right: 10%;
+  top: 330px;
   position: absolute;
 }
 
-p{
-  font-family: "Junicode-Bold";
-  font-size: 1.8em;
-  line-height: 2px;
-  margin-top: 0px;
+p:nth-child(4){
+  right: 80%;
+  top: 80px;
+  position: absolute;
 }
 
-.punctuation:hover{
+.punctuation:hover {
 color:red;
+opacity:100;
 }
+
+
 
  cursor: url('/YOUR_PATH/cursor.cur'), auto;
+
+ @media
