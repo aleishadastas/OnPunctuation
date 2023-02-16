@@ -31,10 +31,10 @@ body {
 
 /* homepage styles  */
   .headers {
-    font-size: 10.5em;
+    font-size: 11vw;
     color: black;
     font-family: "Junicode-Bold";
-    margin-top: -130px;
+    margin-top: -10vw;
     line-height:10px;
     margin-left:40px;
     margin-right: 40px;
@@ -42,67 +42,63 @@ body {
     display: block;
     margin-left: -2px;
     margin-bottom: 100px;
+    position: absolute;
 }
 
 
 h1{
   text-align: right;
-  position: relative;
-  font-size: 2em;
-  line-height: 2px;
+  line-height: 2vw;
 }
 
 h2{
-line-height: 2px;
+line-height: 2vw;
 font-size: 2em;
 margin-top: 10px
 }
 
 h3{
   font-size: 2em;
-  line-height: 2px;
-  margin: 0 auto;
+  line-height: 5vw;
+  margin-top: 5vw;
 }
 
 /* ------------------------------- */
 
 #author{
-  font-size: 4em;
-  line-height: 65px;
+  font-size: 4.5vw;
+  line-height: 5vw;
   position: absolute;
-  top: 400px;
-  right: 315px;
+  top: 26.8vw;
+  right: 24vw;
 }
 
 /* ------------------------------- */
 
 .punctuation{
-  line-height: 5px;
+  line-height: 5vw;
   font-family: "Junicode-Bold";
-  font-size: 18em;
+  font-size: 18vw;
+  position: absolute;
   /* opacity: 0; */
-  flex-wrap: wrap;
 }
 
 
 p:nth-child(2){ /*dash*/
   text-align: right;
-  right: 29%;
-  position: absolute;
-  top: 60px;
+  margin-right: 4vw;
+  top: 2vw;
 }
 
  p:nth-child(3){  /*period*/
-  right: 180px;
+  margin-right: 100px;
   top: 330px;
-  position: absolute;
 }
 
 #colon{
-  right: 180px;
-  top: -180px;
+  margin-left: 10vw;
+  margin-top: -12vw;
   line-height: 10px;
-  position: absolute;
 }
 
 .punctuation:hover {
@@ -115,68 +111,66 @@ opacity:100;
 #intro{
   position: relative;
   text-align: center;
-  font-size: 5em;
+  font-size: 5vw;
   font-family: "Junicode", serif;
- line-height: 90px;
+ line-height: 6vw;
  flex-wrap: wrap;
- margin-top: 10px;
- top: 100px;
- margin-right: 150px;
- margin-left: 160px;
- margin-bottom: 450px;
+ top: 62vw;
+ margin-bottom: 120vw;
 }
 
 .punctuation2{
   opacity: 0;
-  font-size: 5em;
+  font-size: 5vw;
   font-family: "Junicode", serif;
-  line-height: 90px;
-  margin-top: 10px;
-  top: 100px;
   flex-direction: row;
+position: absolute;
 }
 
 .punctuation2:hover {
   color:red;
   opacity:100;
+  position: absolute;
   }
 
  #one{
   font-family: "Junicode", serif;
-  position: absolute; 
-  margin-left: 458px;
-  top: 743px;
+  margin-top: -75.5vw;
+  margin-left: 32.4vw;
+  position: absolute;
  }
 
  #two{
   font-family: "Junicode", serif;
-  position: absolute; 
-  margin-left: 842px;
-  top: 743px;
+  margin-left: 56.4vw;
+  margin-top: -75.5vw;
  }
 
 /* --------------------------------- */
 
 .Enter{
 text-align: center;
-font-size: 5em;
+font-size: 6vw;
 font-family: "Junicode", serif;
+flex-wrap: nowrap;
+margin-bottom: 32vw;
 }
 
 #En{
   margin-bottom: 450px;
+  left: 47vw;
+  position: absolute;
 }
 
 #hyphen{
-  position: absolute;
   text-align: center;
-  top: 1370px;
- left: 
+  left: 43.5vw;
+ position: absolute;
 }
 
 a{
   text-decoration: none;
-  opacity: 100;
+  opacity: 0;
 }
 
 a:hover {
