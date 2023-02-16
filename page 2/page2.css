@@ -16,4 +16,28 @@ body {
     background-color: white;
     font-size: 16px;
   }
-  
+
+#ter2{
+text-align: center;
+font-size: 6vw;
+font-family: "Junicode", serif;
+flex-wrap: nowrap;
+margin-top: 20vw;
+  left: 47vw;
+}
+
+#period{
+  text-align: center;
+ position: absolute;
+ margin: 0 auto;
+}
+
+a{
+  text-decoration: none;
+  opacity: 100;
+}
+
+a:hover {
+  color:red;
+  opacity:100;
+}

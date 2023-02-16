@@ -85,19 +85,18 @@ h3{
 
 
 p:nth-child(2){ /*dash*/
-  text-align: right;
+  text-align: left;
   margin-right: 4vw;
   top: 2vw;
 }
 
  p:nth-child(3){  /*period*/
-  margin-right: 100px;
+  margin-right: 1vw;
   top: 330px;
 }
 
 #colon{
-  margin-left: 10vw;
-  margin-top: -12vw;
+  margin-top: -15vw;
   line-height: 10px;
 }
 
