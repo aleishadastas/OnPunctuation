@@ -41,6 +41,7 @@ body {
     flex-grow: inherit;
     display: block;
     margin-left: -2px;
+    margin-bottom: 100px;
 }
 
 
@@ -76,6 +77,7 @@ h3{
   font-family: "Junicode-Bold";
   font-size: 18em;
   /* opacity: 0; */
+  flex-wrap: wrap;
 }
 
 
@@ -104,8 +106,69 @@ color:red;
 opacity:100;
 }
 
+#intro{
+  position: relative;
+  text-align: center;
+  font-size: 5em;
+  font-family: "Junicode", serif;
+ line-height: 90px;
+ flex-wrap: wrap;
+ margin-top: 10px;
+ top: 100px;
+ margin-right: 150px;
+ margin-left: 160px;
+ margin-bottom: 400px;
+}
+
+.punctuation2{
+  /* opacity: 0 */
+  font-size: 5em;
+  font-family: "Junicode", serif;
+  line-height: 90px;
+  margin-top: 10px;
+  top: 100px;
+  flex-direction: row;
+}
+
+.punctuation2:hover {
+  color:red;
+  /* opacity:100; */
+  }
+
+ #one{
+  font-family: "Junicode", serif;
+  position: absolute; 
+  margin-left: 458px;
+  top: 743px;
+ }
+
+ #two{
+  font-family: "Junicode", serif;
+  position: absolute; 
+  margin-left: 842px;
+  top: 743px;
+ }
+
+.Enter{
+
+}
+
+#hyphen{
+
+}
+
+#period{
+  
+}
+
+#hyphen + #period:hover{
+  color:red;
+  opacity:100;
+}
 
 
  cursor: url('/YOUR_PATH/cursor.cur'), auto;
 
- @media
+ @media (min-width: 600px) {
+
+ }
