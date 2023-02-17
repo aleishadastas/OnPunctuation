@@ -70,6 +70,13 @@ font-family: "Junicode";
 line-height: 2.3vw;
 }
 
+p:nth-child(5){
+  margin-right: 4vw;
+  text-align: left;
+ position: relative;
+  margin-bottom: 0w;
+}
+
 /* @media (min-width: 60px) { 
 
 #flex-container {
@@ -81,3 +88,7 @@ line-height: 2.3vw;
   justify-content: center;
   margin-top: -2px;
 } */
+
+p:nth-child(){
+  
+}

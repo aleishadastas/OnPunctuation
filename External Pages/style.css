@@ -1,5 +1,4 @@
-
-
+/*  Fonts */
 @font-face {
     font-family: "Junicode";
     src: url("fonts/Junicode-Regular.ttf");
@@ -11,7 +10,7 @@
   src: url("Junicode-Bold.ttf") format("truetype");
 }
 
-
+/* Body/Root */
 body {
     background-color: white;
     font-family: "Junicode";
@@ -19,6 +18,8 @@ body {
     font-size: 16px;
   }
 
+
+  /* Homepage Header Styles  */
   #flex-container {
     display: flex;
     background-color: none;
@@ -28,8 +29,6 @@ body {
     width: 100%;
   }
 
-
-/* homepage styles  */
   .headers {
     font-size: 11vw;
     color: black;
@@ -44,7 +43,6 @@ body {
     margin-bottom: 100px;
     position: absolute;
 }
-
 
 h1{
   text-align: right;
@@ -63,7 +61,7 @@ h3{
   margin-top: 5vw;
 }
 
-/* ------------------------------- */
+/* Author Name */
 
 #author{
   font-size: 4.5vw;
@@ -73,7 +71,8 @@ h3{
   right: 24vw;
 }
 
-/* ------------------------------- */
+
+/* Header Punctuation Marks */
 
 .punctuation{
   line-height: 5vw;
@@ -83,21 +82,21 @@ h3{
   /* opacity: 0; */
 }
 
-
-p:nth-child(2){ /*dash*/
+#dash > p { /*hyphen*/
   text-align: left;
-  margin-right: 4vw;
-  top: 2vw;
+  margin-left: 45.5vw; 
+  margin-top: -8vw;
 }
 
- p:nth-child(3){  /*period*/
-  margin-right: 1vw;
-  top: 330px;
+#period > p{  /*period*/
+  margin-top: -1.2vw;
+  margin-left: 65vw;
 }
 
-#colon{
-  margin-top: -15vw;
-  line-height: 10px;
+#colon > p {
+  margin-top: 3vw;
+ margin-left: 64vw;
+ font-size: 21vw;
 }
 
 .punctuation:hover {
@@ -105,7 +104,9 @@ color:red;
 opacity:100;
 }
 
-/* ------------------------------- */
+
+
+/* Introduction Styles */
 
 #intro{
   position: relative;
@@ -130,6 +131,7 @@ position: absolute;
   color:red;
   opacity:100;
   position: absolute;
+  display: inline;
   }
 
  #one{
@@ -145,7 +147,9 @@ position: absolute;
   margin-top: -75.5vw;
  }
 
-/* --------------------------------- */
+
+
+/* Start Menu */
 
 .Enter{
 text-align: center;
@@ -161,7 +165,7 @@ margin-bottom: 32vw;
   position: absolute;
 }
 
-#hyphen{
+#Hyphen{
   text-align: center;
   left: 43.5vw;
  position: absolute;
@@ -178,19 +182,33 @@ a:hover {
 }
 
 
-/* #period{
- put on second page
-} /*
+
+/* Cursor Styles */
+
+ cursor: url('/YOUR_PATH/cursor.cur'), auto;
 
 
 
-/* #period:hover{       put this on second page
-  color:red;
-  opacity:100;
- }  */
+
+ /* Media Queries */
+
+ @media (min-width: 600px) {
+
+ }
+
+
+
+ /* ------------------------------- */
+
+ /* Note to Self: Put the following on second page
+#period{
+} 
+  #period:hover{     
+    color:red;
+     opacity:100;
+      }  */
 
 /* ------------------------------- */
-
 
 /* circle { 
   position: absolute;
@@ -206,17 +224,3 @@ a:hover {
   left: 15px;
   background-position: 0px -20px;
 } */
-
-/* ---------------cursor---------------- */
-
- cursor: url('/YOUR_PATH/cursor.cur'), auto;
-
-
-
-
- /* media queries */
-
- @media (min-width: 600px) {
-
- }
- /* ------------------------------- */
