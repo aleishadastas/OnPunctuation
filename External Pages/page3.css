@@ -1,0 +1,83 @@
+@font-face {
+    font-family: "Junicode";
+    src: url("fonts/Junicode-Regular.ttf");
+    font-weight: normal;
+  }
+
+@font-face {
+  font-family: "Junicode-Bold";
+  src: url("fonts/Junicode-Bold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Junicode-Italic";
+  src: url("fonts/Junicode-Italic.ttf") format("truetype");
+}
+
+
+
+body {
+    background-color: white;
+    font-size: 16px;
+  }
+
+.headers{
+  font-size: 1.5vw;
+  font-family: "Junicode-Italic";
+margin-top: 4vw;
+margin-bottom: -2vw;
+}
+
+a:nth-child(1) {
+  margin-left: 4vw;
+text-align: left;
+text-decoration: none;
+color: black;
+}
+
+a:nth-child(1):hover{
+color: red;
+}
+
+p:nth-child(2){
+  margin-right: 4vw;
+  text-align: right;
+  margin-top: -2vw;
+  margin-bottom: 0w;
+}
+
+#flex-container {
+  display: flex;
+  background-color: white;
+  flex-direction: row;
+   flex-wrap: nowrap;
+  width: 100%;
+  justify-content: center;
+  margin-top: -2px;
+}
+
+#flex-container > div {
+  background-color: transparent;
+  width: 42vw;
+    padding: 3vw;
+    font-size: 1.5vw;
+  border: none;
+margin-bottom: 2vw;
+text-align: left;
+margin-left: 0;
+text-align: justify;
+font-family: "Junicode";
+line-height: 2.3vw;
+}
+
+/* @media (min-width: 60px) { 
+
+#flex-container {
+  display: flex;
+  background-color: white;
+  flex-direction: row;
+   flex-wrap: wrap;
+  width: 100%;
+  justify-content: center;
+  margin-top: -2px;
+} */
