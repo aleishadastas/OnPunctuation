@@ -1,0 +1,188 @@
+/* Fonts */
+@font-face {
+    font-family: "Junicode";
+    src: url("fonts/Junicode-Regular.ttf");
+    font-weight: normal;
+  }
+
+@font-face {
+  font-family: "Junicode-Bold";
+  src: url("fonts/Junicode-Bold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Junicode-Italic";
+  src: url("fonts/Junicode-Italic.ttf") format("truetype");
+}
+
+
+body {
+    background-color: white;
+    font-size: 16px;
+      /* Highlight Text Prevention */
+      -webkit-user-select: none; /* Safari */
+      -ms-user-select: none; /* IE 10 and IE 11 */
+      user-select: none; /* Standard syntax */
+      overflow: hidden;
+    }
+  
+   /* Headers */
+.headers{
+    font-size: 1.5vw;
+    font-family: "Junicode-Italic";
+  margin-top: 3vw;
+  margin-bottom: -2vw;
+  }
+  
+  #FirstLink {
+    margin-left: 4vw;
+  text-align: left;
+  text-decoration: none;
+  color: black;
+  }
+  
+  #FirstLink:hover{
+  color: red;
+  }
+  
+  p:nth-child(2){
+    margin-right: 4.6vw;
+    text-align: right;
+    margin-top: -2vw;
+    margin-bottom: 0w;
+  }
+
+
+/* Punctuation + Hover */
+ tspan{
+    opacity: 0;
+    color: black;
+  }
+    
+  #container:hover tspan{
+    opacity: 100;
+    color: red;
+    font-size: 1.2vw;
+    fill: red;
+  }
+
+
+
+/* Highlighted words */
+#words{
+opacity: 100;
+}
+
+#container:hover #words{
+    color: black;
+    line-height: 1vw;
+    text-decoration-line: underline;
+    text-decoration-style: wavy;
+    text-decoration-color: red;
+  }
+
+  /* Text Animation */
+
+  #container { margin: 0%; 
+    font-family: "Junicode";
+    bottom:0%;
+  align-content: center;
+  transform: translate(0px,-50px);
+background-color: NONE;}
+
+      #circle { position: absolute; width: 30vw; padding-bottom: 100%; overflow: hidden; transform: translate(35vw,-50px);; }
+      
+      #circle text { font-family: "Junicode", serif; font-weight: 400; font-size: 1.2vw; 
+    }
+      
+
+      #circle svg { position: absolute; left: 0; top: 8vw; width: 100%; height: 40vw;
+      
+        -webkit-animation-name: rotate;
+           -moz-animation-name: rotate;
+            -ms-animation-name: rotate;
+             -o-animation-name: rotate;
+                animation-name: rotate;
+        -webkit-animation-duration: 5.5s;
+           -moz-animation-duration: 5.5s;
+            -ms-animation-duration: 5.5s;
+             -o-animation-duration: 5.5s;
+                animation-duration: 5.5s;
+        -webkit-animation-iteration-count: infinite;
+           -moz-animation-iteration-count: infinite;
+            -ms-animation-iteration-count: infinite;
+             -o-animation-iteration-count: infinite;
+                animation-iteration-count: infinite;
+        -webkit-animation-timing-function: linear;
+           -moz-animation-timing-function: linear;
+            -ms-animation-timing-function: linear;
+             -o-animation-timing-function: linear;
+                animation-timing-function: linear;
+      }
+
+      /*Animation Keyferames*/
+      @-webkit-keyframes rotate {
+          from { -webkit-transform: rotate(360deg); }
+          to { -webkit-transform: rotate(0); }
+      }
+      @-moz-keyframes rotate {
+          from { -moz-transform: rotate(360deg); }
+          to { -moz-transform: rotate(0); }
+      }
+      @-ms-keyframes rotate {
+          from { -ms-transform: rotate(360deg); }
+          to { -ms-transform: rotate(0); }
+      }
+      @-o-keyframes rotate {
+          from { -o-transform: rotate(360deg); }
+          to { -o-transform: rotate(0); }
+      }
+      @keyframes rotate {
+          from { transform: rotate(360deg); }
+          to { transform: rotate(0); }
+      }
+
+      @-webkit-keyframes flip-horizontal-bottom {
+        0% {
+          -webkit-transform: rotateX(0);
+                  transform: rotateX(0);
+        }
+        100% {
+          -webkit-transform: rotateX(-180deg);
+                  transform: rotateX(-180deg);
+        }
+      }
+      @keyframes flip-horizontal-bottom {
+        0% {
+          -webkit-transform: rotateX(0);
+                  transform: rotateX(0);
+        }
+        100% {
+          -webkit-transform: rotateX(-180deg);
+                  transform: rotateX(-180deg);
+        }
+      }
+      
+
+
+  /* Cursor Styles */
+@media (hover: hover) and (pointer: fine) {
+    #cursor {
+      z-index: 99;
+      position: fixed;
+      left: 0;
+      top: 0;
+      pointer-events: none;
+      will-change: transform;
+    }
+  
+    #cursor .cursor--inner {
+      width: 2vw;
+      height: 2vw;
+      border-radius: 50%;
+      transform: translate(-50%, -50%);
+      border: solid 1px red;
+    }
+  }
+
+ 

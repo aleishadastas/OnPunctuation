@@ -1,0 +1,67 @@
+@font-face {
+    font-family: "Junicode";
+    src: url("fonts/Junicode-Regular.ttf");
+    font-weight: normal;
+  }
+
+@font-face {
+  font-family: "Junicode-Bold";
+  src: url("Junicode-Bold.ttf") format("truetype");
+}
+
+
+body {
+    background-color: white;
+    font-family: "Junicode", serif;
+    font-size: 16px;
+  }
+
+#ter2{
+text-align: center;
+font-size: 6vw;
+font-family: "Junicode", serif;
+flex-wrap: nowrap;
+margin-top: 22vw;
+margin-bottom: 20vw;
+  left: 47vw;
+}
+
+#period{
+  text-align: center;
+ position: absolute;
+ margin: 0 auto;
+ font-size: 6vw;
+ margin-top: -28.65vw;
+ margin-left: 45.8vw;
+}
+
+a{
+  text-decoration: none;
+  opacity: 0;
+}
+
+a:hover {
+  color:red;
+  opacity:100;
+}
+
+
+/* Cursor Styles */
+@media (hover: hover) and (pointer: fine) {
+  #cursor {
+    z-index: 99;
+    position: fixed;
+    left: 0;
+    top: 0;
+    pointer-events: none;
+    will-change: transform;
+  }
+
+  #cursor .cursor--inner {
+    width: 2vw;
+    height: 2vw;
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    border: solid 1px red;
+  }
+}
