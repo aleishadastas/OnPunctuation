@@ -1,0 +1,102 @@
+@font-face {
+    font-family: "Junicode";
+    src: url("fonts/Junicode-Regular.ttf");
+    font-weight: normal;
+  }
+
+@font-face {
+  font-family: "Junicode-Bold";
+  src: url("Junicode-Bold.ttf") format("truetype");
+}
+
+
+body {
+    background-color: white;
+    font-family: "Junicode", serif;
+    font-size: 16px;
+  }
+
+
+
+
+   /* Headers */
+   .headers{
+    font-size: 1.5vw;
+    font-family: "Junicode-Italic";
+  margin-top: 3vw;
+  margin-bottom: -2vw;
+  }
+  
+  #FirstLink {
+    margin-left: 4vw;
+  text-align: left;
+  text-decoration: none;
+  color: black;
+  }
+  
+  #FirstLink:hover{
+  color: red;
+  }
+  
+  #Return{
+    margin-left: 90vw;
+    position: absolute;
+    text-align: right;
+    margin-top: -2.1vw;
+    text-decoration: none;
+    color: black;
+  }
+
+  #Return:hover{
+    text-decoration: none;
+    color: red;
+  }
+
+#pro{
+text-align: center;
+font-size: 6vw;
+font-family: "Junicode", serif;
+flex-wrap: nowrap;
+margin-top: 20vw;
+margin-bottom: 20vw;
+  left: 47vw;
+}
+
+.punctuation{
+color: red;
+}
+
+span{
+    opacity: 0;
+    color: red;
+}
+
+#pro:hover span {
+  color:red;
+  opacity:100;
+}
+
+a{
+    text-decoration: none;
+}
+
+
+/* Cursor Styles */
+@media (hover: hover) and (pointer: fine) {
+  #cursor {
+    z-index: 99;
+    position: fixed;
+    left: 0;
+    top: 0;
+    pointer-events: none;
+    will-change: transform;
+  }
+
+  #cursor .cursor--inner {
+    width: 2vw;
+    height: 2vw;
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    border: solid 1px red;
+  }
+}
