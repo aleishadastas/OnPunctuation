@@ -16,7 +16,6 @@ body{
     color: black;
 }
 
-
   /* Header */
   .header{
     font-size: 1.5vw;
@@ -85,3 +84,19 @@ p{
     }
   }
   
+
+ p {
+    animation: blinker 1.5s linear infinite;
+    text-decoration: none;
+  }
+  
+  @keyframes blinker {
+    from{
+        text-decoration: red;
+    }
+    to{
+        text-decoration-line: underline;
+        text-decoration-style: wavy;
+        text-decoration-color: red;
+    }
+  }
