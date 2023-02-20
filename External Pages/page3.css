@@ -17,14 +17,20 @@
 
 
 body {
-    background-color: white;
-    font-size: 16px;
+  background-color: white;
+  font-size: 16px;
+    /* Highlight Text Prevention */
+    -webkit-user-select: none; /* Safari */
+    -ms-user-select: none; /* IE 10 and IE 11 */
+    user-select: none; /* Standard syntax */
+    overflow: hidden;
   }
 
+  /* Headers */
 .headers{
   font-size: 1.5vw;
   font-family: "Junicode-Italic";
-margin-top: 4vw;
+margin-top: 3vw;
 margin-bottom: -2vw;
 }
 
@@ -40,42 +46,109 @@ color: red;
 }
 
 p:nth-child(2){
-  margin-right: 4vw;
+  margin-right: 4.6vw;
   text-align: right;
   margin-top: -2vw;
   margin-bottom: 0w;
 }
 
-#flex-container {
-  display: flex;
+/* Text */
+.flex-container {
   background-color: white;
   flex-direction: row;
    flex-wrap: nowrap;
   width: 100%;
-  justify-content: center;
-  margin-top: -2px;
+  margin-left: 2vw;
+  display: grid;
 }
 
-#flex-container > div {
+.flex-container > div {
   background-color: transparent;
-  width: 42vw;
-    padding: 3vw;
-    font-size: 1.5vw;
+  font-size: 1.5vw;
   border: none;
 margin-bottom: 2vw;
 text-align: left;
-margin-left: 0;
 text-align: justify;
 font-family: "Junicode";
 line-height: 2.3vw;
+position: relative;
+margin-top: 0vw;
+height: 20vw;
+position: relative;
 }
 
-p:nth-child(5){
-  margin-right: 4vw;
-  text-align: left;
- position: relative;
-  margin-bottom: 0w;
+#columnOne{
+  float: left;
+  margin-left: 2vw;
+  width: 44vw;
 }
+
+#columnTwo{
+  margin-left: 48vw;
+  margin-top: -22vw;
+  float: right;
+  position: relative;
+  margin-right: 2vw;
+  width: 44vw;
+}
+
+
+/* Punctuation + Hover */
+span{
+  opacity: 0;
+}
+
+.flex-container > div:hover span{
+  opacity: 100;
+  color: red;
+  font-size: 2vw;
+  overflow: visible;
+  line-height: 2vw;
+}
+
+/* Footnotes Divider */
+hr{
+  width: 90vw;
+  margin-top: 11.5vw;
+  margin-left: 2vw;
+  }
+
+/* Footnotes Styles */
+.footnotes{
+  font-size: 4vw;
+  display: block;
+  top: 1.5vw;
+  margin-left: 2vw;
+  width: 100vw;
+  position: relative;
+  text-align: left;
+  line-height: 2.3vw;
+  margin-bottom: 3vw;
+}
+
+/* Cursor Styles */
+@media (hover: hover) and (pointer: fine) {
+  #cursor {
+    z-index: 99;
+    position: fixed;
+    left: 0;
+    top: 0;
+    pointer-events: none;
+    will-change: transform;
+  }
+
+  #cursor .cursor--inner {
+    width: 2vw;
+    height: 2vw;
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    border: solid 1px red;
+    background-color: red;
+  }
+}
+
+
+
 
 /* @media (min-width: 60px) { 
 
@@ -89,6 +162,3 @@ p:nth-child(5){
   margin-top: -2px;
 } */
 
-p:nth-child(){
-  
-}

@@ -16,6 +16,10 @@ body {
     font-family: "Junicode";
     background-color: white;
     font-size: 16px;
+     /* Highlight Text Prevention */
+     -webkit-user-select: none; /* Safari */
+     -ms-user-select: none; /* IE 10 and IE 11 */
+     user-select: none; /* Standard syntax */
   }
 
 
@@ -184,9 +188,25 @@ a:hover {
 
 
 /* Cursor Styles */
+@media (hover: hover) and (pointer: fine) {
+  #cursor {
+    z-index: 99;
+    position: fixed;
+    left: 0;
+    top: 0;
+    pointer-events: none;
+    will-change: transform;
+  }
 
- cursor: url('/YOUR_PATH/cursor.cur'), auto;
-
+  #cursor .cursor--inner {
+    width: 2vw;
+    height: 2vw;
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    border: solid 1px red;
+    background-color: red;
+  }
+}
 
 
 
