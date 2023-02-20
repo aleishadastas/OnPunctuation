@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="page9.css">
+    </head>
+    <body>
+        <div class="headers">
+            <a id="FirstLink" href="index.html"> On Punctuation</a>
+            <p>7</p>
+        </div>
+        
+
+        <div id="container">
+            <div id="circle">
+            <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="300px" height="300px" viewBox="0 0 300 300" enable-background="new 0 0 300 300" xml:space="preserve">
+                <defs>
+                    <path id="circlePath" d="M 150, 150 m -60, 0 a 60,60 0 0,1 120,0 a 60,60 0 0,1 -120,0 "/>
+                </defs>
+                <circle cx="150" cy="100" r="75" fill="none"/>
+                <g>
+                    <use xlink:href="#circlePath" fill="none"/>
+                    <text fill="#000">
+                        <textPath xlink:href="#circlePath"> But that is the way I 
+                            felt about <tspan id="words">punctuation</tspan> in prose<tspan style="color:red">.</tspan> </textPath>
+                    </text>
+                </g>
+            </svg>
+            </div>
+            </div>
+
+
+            <!-- Cursor -->
+            <div id="cursor">
+                <div class="cursor--inner"></div>
+              </div>
+        <script src="cursor.js" async defer></script>
+    </body>
+</html>
