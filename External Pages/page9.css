@@ -185,4 +185,9 @@ background-color: NONE;}
     }
   }
 
- 
+  @media (min-width: 600px){
+    #circle{
+      margin-top: 50%;
+      font-size: 20vw;
+    }
+  }
