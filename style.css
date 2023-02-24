@@ -1,56 +1,55 @@
-/*  Fonts */
 @font-face {
-    font-family: "Junicode";
-    src: url("fonts/Junicode-Regular.ttf");
-    font-weight: normal;
-  }
+  font-family: "Junicode";
+  src: url("fonts/Junicode-Regular.ttf");
+  font-weight: normal;
+}
 
 @font-face {
-  font-family: "Junicode-Bold";
-  src: url("Junicode-Bold.ttf") format("truetype");
+font-family: "Junicode-Bold";
+src: url("Junicode-Bold.ttf") format("truetype");
 }
 
 /* Body/Root */
 body {
-    background-color: white;
-    font-family: "Junicode";
-    background-color: white;
-    font-size: 16px;
-     /* Highlight Text Prevention */
-     -webkit-user-select: none; /* Safari */
-     -ms-user-select: none; /* IE 10 and IE 11 */
-     user-select: none; /* Standard syntax */
-  }
+  background-color: white;
+  font-family: "Junicode";
+  background-color: white;
+  font-size: 16px;
+   /* Highlight Text Prevention */
+   -webkit-user-select: none; /* Safari */
+   -ms-user-select: none; /* IE 10 and IE 11 */
+   user-select: none; /* Standard syntax */
+}
 
 
-  /* Homepage Header Styles  */
-  #flex-container {
-    display: flex;
-    background-color: none;
-    flex-direction: row;
-     flex-wrap: wrap;
-    justify-content: center; 
-    width: 100%;
-  }
+/* Homepage Header Styles  */
+#flex-container {
+  display: flex;
+  background-color: none;
+  flex-direction: row;
+   flex-wrap: wrap;
+  justify-content: center; 
+  width: 100%;
+}
 
-  .headers {
-    font-size: 11vw;
-    color: black;
-    font-family: "Junicode-Bold";
-    margin-top: -10vw;
-    line-height:10px;
-    margin-left:40px;
-    margin-right: 40px;
-    flex-grow: inherit;
-    display: block;
-    margin-left: -2px;
-    margin-bottom: 100px;
-    position: absolute;
+.headers {
+  font-size: 11vw;
+  color: black;
+  font-family: "Junicode-Bold";
+  margin-top: -10vw;
+  line-height:10px;
+  margin-left:40px;
+  margin-right: 40px;
+  flex-grow: inherit;
+  display: block;
+  margin-left: -2px;
+  margin-bottom: 100px;
+  position: absolute;
 }
 
 h1{
-  text-align: right;
-  line-height: 2vw;
+text-align: right;
+line-height: 2vw;
 }
 
 h2{
@@ -60,96 +59,76 @@ margin-top: 10px
 }
 
 h3{
-  font-size: 2em;
-  line-height: 5vw;
-  margin-top: 5vw;
+font-size: 2em;
+line-height: 5vw;
+margin-top: 5vw;
 }
 
 /* Author Name */
 
 #author{
-  font-size: 4.5vw;
-  line-height: 5vw;
-  position: absolute;
-  top: 26.8vw;
-  right: 24vw;
+font-size: 4.5vw;
+line-height: 5vw;
+position: absolute;
+top: 26.8vw;
+right: 27vw;
 }
 
+.cool{
+font-family: "Junicode", serif;
+}
+
+.headers:hover .cool{
+color: red;
+}
 
 /* Header Punctuation Marks */
 
-.punctuation{
-  line-height: 5vw;
-  font-family: "Junicode-Bold";
-  font-size: 18vw;
-  position: absolute;
-  /* opacity: 0; */
-}
 
-#dash > p { /*hyphen*/
-  text-align: left;
-  margin-left: 45.5vw; 
-  margin-top: -8vw;
-}
-
-#period > p{  /*period*/
-  margin-top: -1.2vw;
-  margin-left: 65vw;
-}
-
-#colon > p {
-  margin-top: 3vw;
- margin-left: 64vw;
- font-size: 21vw;
-}
-
-.punctuation:hover {
-color:red;
-opacity:100;
-}
 
 
 
 /* Introduction Styles */
 
 #intro{
-  position: relative;
-  text-align: center;
-  font-size: 5vw;
-  font-family: "Junicode", serif;
- line-height: 6vw;
- flex-wrap: wrap;
- top: 62vw;
- margin-bottom: 120vw;
+position: relative;
+text-align: center;
+font-size: 5vw;
+font-family: "Junicode", serif;
+line-height: 6vw;
+flex-wrap: wrap;
+top: 62vw;
+margin-bottom: 120vw;
 }
 
-.punctuation2{
-  opacity: 0;
-  font-size: 5vw;
-  font-family: "Junicode", serif;
-  flex-direction: row;
+.commas{
+opacity: 0;
+font-size: 5vw;
+font-family: "Junicode", serif;
+flex-direction: row;
+position: absolute;
+margin-bottom: 50vw;
+}
+
+#intro:hover .commas {
+color:red;
+opacity:100;
+position: absolute;
+display: inline;
+}
+
+#one{
+font-family: "Junicode", serif;
+margin-top: -75.5vw;
+margin-left: 32.4vw;
 position: absolute;
 }
 
-.punctuation2:hover {
-  color:red;
-  opacity:100;
-  position: absolute;
-  display: inline;
-  }
-
- #one{
-  font-family: "Junicode", serif;
-  margin-top: -75.5vw;
-  margin-left: 32.4vw;
-  position: absolute;
- }
-
- #two{
-  font-family: "Junicode", serif;
-  margin-left: 56.4vw;
-  margin-top: -75.5vw;
- }
+#two{
+font-family: "Junicode", serif;
+margin-left: 56.4vw;
+margin-top: -75.5vw;
+}
 
 
 
@@ -161,85 +140,86 @@ font-size: 6vw;
 font-family: "Junicode", serif;
 flex-wrap: nowrap;
 margin-bottom: 32vw;
+margin-top: 50vw;
 }
 
 #En{
-  margin-bottom: 450px;
-  left: 47vw;
-  position: absolute;
+margin-bottom: 450px;
+left: 47vw;
+position: absolute;
 }
 
 #Hyphen{
-  text-align: center;
-  left: 43.5vw;
- position: absolute;
+text-align: center;
+left: 43.5vw;
+position: absolute;
 }
 
 a{
-  text-decoration: none;
-  opacity: 0;
+text-decoration: none;
+opacity: 0;
 }
 
 a:hover {
-  color:red;
-  opacity:100;
+color:red;
+opacity:100;
 }
 
 
 
 /* Cursor Styles */
 @media (hover: hover) and (pointer: fine) {
-  #cursor {
-    z-index: 99;
-    position: fixed;
-    left: 0;
-    top: 0;
-    pointer-events: none;
-    will-change: transform;
-  }
+#cursor {
+  z-index: 99;
+  position: fixed;
+  left: 0;
+  top: 0;
+  pointer-events: none;
+  will-change: transform;
+}
 
-  #cursor .cursor--inner {
-    width: 2vw;
-    height: 2vw;
-    border-radius: 50%;
-    transform: translate(-50%, -50%);
-    border: solid 1px red;
-  }
+#cursor .cursor--inner {
+  width: 2vw;
+  height: 2vw;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  border: solid 1px red;
+}
 }
 
 
 
- /* Media Queries */
+/* Media Queries */
 
- @media (min-width: 600px) {
+@media (min-width: 600px) {
 
- }
+}
 
 
 
- /* ------------------------------- */
+/* ------------------------------- */
 
- /* Note to Self: Put the following on second page
+/* Note to Self: Put the following on second page
 #period{
 } 
-  #period:hover{     
-    color:red;
-     opacity:100;
-      }  */
+#period:hover{     
+  color:red;
+   opacity:100;
+    }  */
 
 /* ------------------------------- */
 
 /* circle { 
-  position: absolute;
-  width: 200px;
-  height: 20px;
-  background: radial-gradient(16px, transparent, transparent 4px, black 4px, black 10px, transparent 11px);
-  background-size: 30px 40px;
+position: absolute;
+width: 200px;
+height: 20px;
+background: radial-gradient(16px, transparent, transparent 4px, black 4px, black 10px, transparent 11px);
+background-size: 30px 40px;
 }
 
 .circle2 {
-  Offset to make squigglies line up 
-  top: 20px;
-  left: 15px;
-  background-position: 0px -20px;
+Offset to make squigglies line up 
+top: 20px;
+left: 15px;
+background-position: 0px -20px;
 } */
