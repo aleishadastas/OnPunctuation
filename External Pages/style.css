@@ -76,37 +76,14 @@ h3{
 }
 
 
+
+.cool:hover{
+color: red;
+}
+
 /* Header Punctuation Marks */
 
-.punctuation{
-  line-height: 5vw;
-  font-family: "Junicode-Bold";
-  font-size: 18vw;
-  position: absolute;
-  /* opacity: 0; */
-}
 
-#dash > p { /*hyphen*/
-  text-align: left;
-  margin-left: 45.5vw; 
-  margin-top: -8vw;
-}
-
-#period > p{  /*period*/
-  margin-top: -1.2vw;
-  margin-left: 65vw;
-}
-
-#colon > p {
-  margin-top: 3vw;
- margin-left: 64vw;
- font-size: 21vw;
-}
-
-.punctuation:hover {
-color:red;
-opacity:100;
-}
 
 
 
