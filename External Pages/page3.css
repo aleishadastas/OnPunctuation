@@ -108,6 +108,7 @@ span{
   font-size: 2vw;
   overflow: visible;
   line-height: 2vw;
+  padding: -3px;
 }
 
 /* Footnotes Divider */
