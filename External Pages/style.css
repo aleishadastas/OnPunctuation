@@ -72,12 +72,14 @@ h3{
   line-height: 5vw;
   position: absolute;
   top: 26.8vw;
-  right: 24vw;
+  right: 27vw;
 }
 
+.cool{
+  font-family: "Junicode", serif;
+}
 
-
-.cool:hover{
+.headers:hover .cool{
 color: red;
 }
 
@@ -100,15 +102,16 @@ color: red;
  margin-bottom: 120vw;
 }
 
-.punctuation2{
+.commas{
   opacity: 0;
   font-size: 5vw;
   font-family: "Junicode", serif;
   flex-direction: row;
 position: absolute;
+margin-bottom: 50vw;
 }
 
-.punctuation2:hover {
+#intro:hover .commas {
   color:red;
   opacity:100;
   position: absolute;
@@ -138,6 +141,7 @@ font-size: 6vw;
 font-family: "Junicode", serif;
 flex-wrap: nowrap;
 margin-bottom: 32vw;
+margin-top: 50vw;
 }
 
 #En{
